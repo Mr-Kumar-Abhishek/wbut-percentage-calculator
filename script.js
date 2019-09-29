@@ -4,14 +4,27 @@
 // checks if js is running or not
 console.log('JS is running');
 
-function empty_check() {
+
+function percentage(dgpa){
   
+}
+
+function empty_check() {
+  console.log("Checks started ...");
+  var check_val = $("#DGPA").val();
+  if(check_val ==  "") {
+    alert("please enter a value in the DGPA field.");
+  }else {
+    percentage(check_val);
+  }
 }
 
 function calculate() {
   console.log("calculate is running ..");
-  $("#submit").click()
-  empty_check();
+  $("#submit").click(function() {
+      empty_check();    
+  });
+
 }
 
 $(calculate());
