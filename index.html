@@ -32,16 +32,18 @@
           <h1>WBUT Percentage</h1>
         </div>
         <div class="row">
-          <form class="form-inline">
-            <div class="form-group mx-sm-3 mb-2">
-              <label for="DGPA" class="sr-only">DGPA:</label>
+          <form action="#" method="get">
+            <div class="form-group-row mx-sm-3 mb-2">
+              <label for="DGPA">DGPA: </label>
               <input type="text" class="form-control" id="DGPA" placeholder="0.00">
             </div>
-            <div class="form-group mx-sm-3 mb-2">
-              <label for="percentage" class="sr-only">Percentage</label>
+            <div class="form-group-row mx-sm-3 mb-2">
+              <label for="percentage">Percentage: </label>
               <input type="text" readonly class="form-control" id="percentage" placeholder="0%">
             </div>
-            <button type="submit" class="btn btn-primary mb-2" id="submit">Calculate</button>
+            <div class="form-group-row mx-sm-3 mb-2 text-right">
+              <button class="btn btn-primary mb-2" type="button" id="submit">Calculate</button>
+            </div>
           </form>
         </div>
       </div>

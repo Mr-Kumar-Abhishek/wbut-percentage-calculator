@@ -6,7 +6,8 @@ console.log('JS is running');
 
 
 function percentage(dgpa){
-  
+  var percentage = (dgpa - 0.75) * 10;
+  $("#percentage").val(percentage);
 }
 
 function empty_check() {
